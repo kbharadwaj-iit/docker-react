@@ -5,9 +5,9 @@ WORKDIR '/app'
 
 #download
 
-COPY package.json .
+COPY package*.json ./
 RUN npm install
-COPY . .
+COPY ./ ./
 
 #tell image what to do
 
